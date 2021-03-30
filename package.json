@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/ltman/pbcli.git"
   },
-  "author": "Patchanon Warin",
+  "author": "Patchanon Warin <patchanon@ltman.com>",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/ltman/pbcli/issues"
