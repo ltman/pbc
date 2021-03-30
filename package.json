@@ -1,0 +1,24 @@
+{
+  "name": "pbcli",
+  "version": "0.0.1",
+  "description": "Protobuf schema management tool",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltman/pbcli.git"
+  },
+  "author": "Patchanon Warin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ltman/pbcli/issues"
+  },
+  "homepage": "https://github.com/ltman/pbcli#readme",
+  "bin": {
+    "pbcli": "bin/pbcli.js"
+  },
+  "dependencies": {
+    "git-url-parse": "^11.4.4",
+    "protobufjs": "^6.10.x",
+    "tar": "^6.1.0"
+  }
+}
