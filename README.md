@@ -35,8 +35,9 @@ proto-repo
 ```
 
 ### CLI Command
-- **update** - fetch .proto schemas from the remote repository and store in local.
-- **raw** - copy all .proto from the remote repository
+- **update** - fetch all .proto schemas from a remote repository and store in local. 
+Need to run every time the remote repository has been updated.
+- **raw** - copy all .proto schemas
 - **desc** - generate .desc output _(required Google *[protoc](https://developers.google.com/protocol-buffers/docs/downloads)*)_
 - **json** - generate .json (JSON descriptors) output
 
