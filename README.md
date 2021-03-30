@@ -4,21 +4,13 @@ A CLI tool for generating protobuf description from a schema repository. No inst
 
 **Supported output format**
 - .desc
-- .json (JSON descriptors *[protobufjs](https://www.npmjs.com/package/protobufjs)*)
+- .json (JSON descriptors of *[protobufjs](https://www.npmjs.com/package/protobufjs)*)
 
 ## Usage
 
-### Schema Repository Structure
-All .proto files must be in the **"schema"** directory.
-```
-proto-repo
-├── schema
-    ├── schemaA.proto
-    └── schemaB.proto
-```
-
-### .protobuf
-A config file including a git URL of the schema repository for fetching schemas. Need to be created and stored in your project.
+### Create .protobuf file
+.protobuf is a config file including a git URL of the schema repository for fetching schemas. 
+Need to be created and stored in your project.
 
 **Example**
 ```
@@ -33,10 +25,19 @@ my_project
 git@github.com:ltman/proto-repo.git
 ```
 
+### Schema Repository Structure
+All .proto files must be in the **"schema"** directory.
+```
+proto-repo
+└── schema
+    ├── schemaA.proto
+    └── schemaB.proto
+```
+
 ### CLI Command
-- **update** - fetch .proto schemas from the schema remote repository and store in local.
+- **update** - fetch .proto schemas from the remote repository and store in local.
 - **raw** - copy all .proto from the remote repository
-- **desc** - generate .desc output _(required Google protoc)_
+- **desc** - generate .desc output _(required Google *[protoc](https://developers.google.com/protocol-buffers/docs/downloads)*)_
 - **json** - generate .json (JSON descriptors) output
 
 ```
