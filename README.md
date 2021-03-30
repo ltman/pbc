@@ -42,7 +42,9 @@ Need to run every time the remote repository has been updated.
 - **json** - generate .json (JSON descriptors) output
 
 ```
+npx pbc update // default master
 npx pbc update <branch-name>
+
 npx pbc raw <dest>
 npx pbc desc <dest>
 npx pbc json <dest>
