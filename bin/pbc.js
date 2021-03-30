@@ -2,22 +2,26 @@
 
 const path = require('path')
 const pkg = require('../package.json')
-const json = require(path.join(__dirname, '..', 'cli', 'json'))
-const desc = require(path.join(__dirname, '..', 'cli', 'desc'))
 const update = require(path.join(__dirname, '..', 'cli', 'update'))
+const raw = require(path.join(__dirname, '..', 'cli', 'raw'))
+const desc = require(path.join(__dirname, '..', 'cli', 'desc'))
+const json = require(path.join(__dirname, '..', 'cli', 'json'))
 
 const args = process.argv
 let ret
 
 switch (args[2]) {
-  case 'json':
-    ret = json.main(args.slice(3))
+  case 'update':
+    ret = update.main(args.slice(3))
+    break
+  case 'raw':
+    ret = raw.main(args.slice(3))
     break
   case 'desc':
     ret = desc.main(args.slice(3))
     break
-  case 'update':
-    ret = update.main(args.slice(3))
+  case 'json':
+    ret = json.main(args.slice(3))
     break
   case 'version':
     console.log(pkg.version)
