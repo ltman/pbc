@@ -4,7 +4,7 @@ A CLI tool for generating protobuf description from a schema repository. No inst
 
 **Supported output format**
 - .desc
-- .json (JSON descriptors *[protobufjs](https://www.npmjs.com/package/protobufjs.org)*)
+- .json (JSON descriptors *[protobufjs](https://www.npmjs.com/package/protobufjs)*)
 
 ## Usage
 
@@ -35,11 +35,13 @@ git@github.com:ltman/proto-repo.git
 
 ### CLI Command
 - **update** - fetch .proto schemas from the schema remote repository and store in local.
+- **raw** - copy all .proto from the remote repository
 - **desc** - generate .desc output _(required Google protoc)_
 - **json** - generate .json (JSON descriptors) output
 
 ```
 npx pbc update <branch-name>
+npx pbc raw <dest>
 npx pbc desc <dest>
 npx pbc json <dest>
 ```
