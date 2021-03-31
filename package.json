@@ -13,6 +13,10 @@
     "url": "https://github.com/ltman/pbc/issues"
   },
   "homepage": "https://github.com/ltman/pbc#readme",
+  "keywords": [
+    "protobuf",
+    "protocol-buffers"
+  ],
   "bin": {
     "pbc": "bin/pbc.js"
   },
