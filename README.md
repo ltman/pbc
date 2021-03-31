@@ -20,7 +20,7 @@ my_project
 └── .protobuf
 ```
 
-.protobuf contains a git url
+.protobuf contains your git url
 ```
 git@github.com:ltman/proto-repo.git
 ```
