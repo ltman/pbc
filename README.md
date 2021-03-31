@@ -1,6 +1,6 @@
 ## pbc
 
-A CLI tool for generating protobuf description from a schema repository. No installation needed.
+A CLI tool for generating protobuf description from a schema repository.
 
 **Supported output format**
 - .desc
