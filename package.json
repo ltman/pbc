@@ -1,6 +1,6 @@
 {
   "name": "pbc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A CLI tool for generating protobuf description from a schema repository",
   "main": "index.js",
   "repository": {
