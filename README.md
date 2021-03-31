@@ -1,5 +1,7 @@
 ## pbc
 
+[![Publish NPM](https://github.com/ltman/pbc/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/ltman/pbc/actions/workflows/npm-publish.yml)
+
 A CLI tool for generating protobuf description from a schema repository.
 
 **Supported output format**
