@@ -27,7 +27,13 @@ switch (args[2]) {
     console.log(pkg.version)
     break
   default:
-    throw new Error("Invalid command")
+    process.stderr.write([
+      'Usage: pbc update [branch name]',
+      '       pbc raw <dest>',
+      '       pbc desc <dest>',
+      '       pbc json <dest>',
+      '',
+    ].join('\n'))
 }
 
 if (typeof ret === 'number') {
